@@ -1,0 +1,26 @@
+.header h3 {
+    font-weight: bold;
+    border-left: 1px solid #1d2024;
+}
+form {
+    padding: 20px;
+    width: 25rem;
+    margin: auto;
+    font-size: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+}
+form input, form textarea {
+    border: 1px solid #e1e1e1 !important;
+}
+form button {
+    padding: 15px;
+    background: rgba(65,155,33,1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+}

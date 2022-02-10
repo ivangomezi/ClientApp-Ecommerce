@@ -1,0 +1,88 @@
+.wrapper {
+    height: 111vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: -5rem;
+    z-index: 1000;
+}
+.wrapper-font {
+    background-image: url('/assets/img/font-login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 111vh;
+    animation: animates 20s infinite;
+}
+@keyframes animates {
+    0% { background-position: center right; }
+    50% { background-position: bottom left; }
+    100% { background-position: center right; }
+}
+.container-wrapper-font {
+    background: linear-gradient(270deg, rgba(196,33,86,1) 0%, rgba(45,19,84,.9) 100%);
+    z-index: 0;
+}
+
+.container-wrapper {
+    z-index: 2;
+    position: relative;
+    height: 100%;
+}
+.container-wrapper .brand-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    padding: 0 15px;
+    width: 50%;
+}
+
+.brand-center form {
+    width: 25rem;
+    margin: auto;
+    font-size: 15px;
+}
+.brand-center form button {
+    padding: 15px;
+    background: rgba(65,155,33,1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+}
+.brand-center .title {
+    color: #fff !important;
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+}
+.brand-center .sub-p {
+    color: #fff;
+    width: 25rem;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1mm;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.brand-center h4 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    width: 20rem;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.brand-center h4 a {
+    color: rgba( 139, 195, 74 ,1);
+    font-weight: 600;
+}
+
+.swal2-container {
+    z-index: 5000;
+}

@@ -1,0 +1,23 @@
+<section class="wrapper wrapper-font">
+    <div class="container-wrapper container-wrapper-font">
+        <div class="brand-center brand-center-font">
+            <h1 class="title">
+                <strong class="lg-hp">
+                    Bienvenido
+                </strong>
+            </h1>
+            <p class="sub-p">Iniciar sesión</p>
+            <form (ngSubmit)="Init()" [formGroup]="form">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control form-control_" id="floatingInput" formControlName="User" placeholder="Usuario">
+                    <label for="floatingInput">Usuario</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control form-control_" id="floatingPassword" formControlName="Password" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <button class="btn-success" type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</section>

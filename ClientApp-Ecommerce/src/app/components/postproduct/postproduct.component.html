@@ -1,0 +1,33 @@
+<section class="container mt-5">
+    <div class="header d-flex">
+        <button (click)="regresar()" class="btn btn-danger" type="button">
+            <i class="fas fa-angle-left"></i> Regresar
+        </button>
+        <h3 class="mx-3 px-3">Registrando producto</h3>
+    </div> 
+    <div class="body mt-5">
+        <form >
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control form-control_" id="code" formControlName="code" placeholder="Código producto">
+                <label for="code">Código</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control form-control_" id="name" formControlName="name" placeholder="Nombre">
+                <label for="name">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea value="" class="form-control form-control_" formControlName="descrip" placeholder="Descripción">
+                </textarea>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control form-control_" id="price" formControlName="price" placeholder="Precio">
+                <label for="price">Precio</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control form-control_" id="imagen" formControlName="imagen" placeholder="Imagen url">
+                <label for="imagen">Imagen url</label>
+            </div>
+            <button class="btn-success" type="submit">Agregar</button>
+        </form>
+    </div>
+</section>

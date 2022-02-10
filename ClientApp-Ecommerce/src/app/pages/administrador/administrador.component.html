@@ -1,0 +1,45 @@
+<section class="container mt-5">
+    <div class="header d-flex">
+        <h3 class="mx-3 px-3">Visualizando productos</h3>
+        <button (click)="nuevo()" class="btn btn-secondary" type="button">
+            Agregar nuevo producto 
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+    <div class="body">
+        <div class="container-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listaProduct">
+                        <td>{{item.id_Product}}</td>
+                        <td>{{item.cod_Product}}</td>
+                        <td>{{item.name_Product}}</td>
+                        <td>{{item.name_Product}}</td>
+                        <td>
+                            <button style="color:red;" (click)="eliminar($event)" id="{{item.id_Product}}" type="button">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </td>
+                        <td>
+                            <button style="color:greenyellow;" (click)="actualizar($event)" id="{{item.id_Product}}" type="button">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

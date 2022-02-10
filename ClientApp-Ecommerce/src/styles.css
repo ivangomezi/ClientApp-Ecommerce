@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-a-color: rgba(240,125,0,1);
+    --primary-b-color: rgba(137,190,40,1);
+    --primary-c-color: rgba(97,55,141,1);
+    --primary-d-color: rgba(35,184,230,1);
+}
+
+.btn {
+    border-radius: 50px !important;
+    padding: .375rem 1rem !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.btn_ {
+    border-radius: 0px 50px 50px 0px !important;
+}
+.btn-success {
+    border-color: var(--primary-b-color) !important;
+    background-color: var(--primary-b-color) !important;
+}
+.btn-warning {
+    border-color: var(--primary-a-color) !important;
+    background-color: var(--primary-a-color) !important;
+    color: #fff !important;
+}
+.btn-info {
+    border-color: var(--primary-d-color) !important;
+    background-color: var(--primary-d-color) !important;
+}
+.btn-secondary {
+    border-color: var(--primary-c-color) !important;
+    background-color: var(--primary-c-color) !important;
+}
+.btn-clear {
+    border-color: var(--primary-c-color) !important;
+    background-color: rgba(255,255,255,1) !important;
+    color: var(--primary-c-color) !important;
+}
+
+.form-control {
+    border-radius: 50px 0px 0px 50px !important;
+    border: none !important;
+    font-size: 12px;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+.form-control_ {
+    border-radius: 6px !important;
+    border: none !important;
+    font-size: 12px;
+}
+.disabled {
+    display: none !important;
+}
+
