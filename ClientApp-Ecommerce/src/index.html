@@ -15,6 +15,20 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    function prev(e){
+      var input = document.getElementById("input_" + e.target.id);
+      if(Number(input.value) > 1)
+      input.value = Number(input.value) - 1;
+    }
+    function next(e){
+      var input = document.getElementById("input_" + e.target.id);
+      if(Number(input.value) < 9)
+        input.value = Number(input.value) + 1;
+    }
+
+  </script>
 </head>
 <body>
   <app-root></app-root>

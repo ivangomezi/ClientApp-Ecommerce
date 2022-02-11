@@ -16,5 +16,6 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Models
         public int Id_Product { get; set; }
         public int Quantity { get; set; }
         public int Total_Buy { get; set; }
+        public string Code_Buy { get; set; }
     }
 }

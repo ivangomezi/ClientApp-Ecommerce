@@ -36,6 +36,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
                     cmd.Parameters.Add(new SqlParameter("@Id_Product", buys.Id_Product));
                     cmd.Parameters.Add(new SqlParameter("@Quantity", buys.Quantity));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", buys.Total_Buy));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", buys.Code_Buy));
 
                     #region parametros adicionales
                     cmd.Parameters.Add(new SqlParameter("@Id_Rol", 1));

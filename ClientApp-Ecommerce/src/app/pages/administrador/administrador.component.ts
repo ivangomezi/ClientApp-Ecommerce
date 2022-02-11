@@ -39,6 +39,7 @@ export class AdministradorComponent implements OnInit {
   }
   actualizar(e:any) {
     this.router.navigate((['/admin/put/', e.target.id]))
+    localStorage.setItem("id_user", this.Id_User)
   }
   eliminar(e:any) {
     Swal.fire(
@@ -52,6 +53,14 @@ export class AdministradorComponent implements OnInit {
     ).then ((result)=> {
       if (result['isConfirmed']){
         //api delete producto
+        this.api.deleteProductos(e.target.id).subscribe({
+          next: data => {
+            window.location.reload();
+          },
+          error: error => {
+            console.error(error.status);
+          }
+        });
       }
     });
   }

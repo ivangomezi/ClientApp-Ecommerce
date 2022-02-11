@@ -5,4 +5,5 @@ export class Buys {
     Quantity ?: number;
     Price_Product ?: number;
     Total_Buy ?: number;
+    Code_Buy ?: string;
 }

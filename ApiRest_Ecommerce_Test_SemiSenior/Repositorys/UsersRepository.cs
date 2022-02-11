@@ -46,6 +46,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
                     cmd.Parameters.Add(new SqlParameter("@Img_Product", "null"));
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
                     #endregion
 
                     Users response = null;
@@ -106,6 +107,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
                     cmd.Parameters.Add(new SqlParameter("@Img_Product", "null"));
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
 
                     List<Users> lista = new List<Users>();
                     Users response = null;
@@ -168,6 +170,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
 
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
                     #endregion
 
                     Users response = null;

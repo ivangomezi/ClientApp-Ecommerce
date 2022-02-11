@@ -36,6 +36,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
                     cmd.Parameters.Add(new SqlParameter("@User_Name", "null"));
                     cmd.Parameters.Add(new SqlParameter("@Password", "null"));
 
+                    #region parametros adicionales
                     cmd.Parameters.Add(new SqlParameter("@Id_Rol", 1));
                     cmd.Parameters.Add(new SqlParameter("@Id_Product", products));
                     cmd.Parameters.Add(new SqlParameter("@Cod_Product", "null"));
@@ -45,6 +46,8 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
                     cmd.Parameters.Add(new SqlParameter("@Img_Product", "null"));
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
+                    #endregion
 
                     Products response = null;
                     await sql.OpenAsync();
@@ -106,6 +109,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
                     cmd.Parameters.Add(new SqlParameter("@Img_Product", "null"));
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
 
                     List<Products> lista = new List<Products>();
                     Products response = null;
@@ -171,6 +175,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
 
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
 
                     Products response = null;
                     await sql.OpenAsync();
@@ -234,6 +239,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
 
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
 
                     Products response = null;
                     await sql.OpenAsync();
@@ -297,6 +303,7 @@ namespace ApiRest_Ecommerce_Test_SemiSenior.Repositorys
 
                     cmd.Parameters.Add(new SqlParameter("@Quantity", 1));
                     cmd.Parameters.Add(new SqlParameter("@Total_Buy", 1));
+                    cmd.Parameters.Add(new SqlParameter("@Code_Buy", "null"));
 
                     Products response = null;
                     await sql.OpenAsync();

@@ -6,7 +6,7 @@
         <h3 class="mx-3 px-3">Actualizando producto</h3>
     </div> 
     <div class="body mt-5">
-        <form >
+        <form (ngSubmit)="register()" [formGroup]="form">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control form-control_" id="code" formControlName="code" placeholder="Código producto">
                 <label for="code">Código</label>
@@ -27,7 +27,7 @@
                 <input type="text" class="form-control form-control_" id="imagen" formControlName="imagen" placeholder="Imagen url">
                 <label for="imagen">Imagen url</label>
             </div>
-            <button class="btn-success" type="submit">Agregar</button>
+            <button class="btn-success" type="submit">Actualizar</button>
         </form>
     </div>
 </section>

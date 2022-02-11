@@ -2,7 +2,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid position-relative">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand">
             <img src="https://www.carvajaltys.com/wp-content/uploads/2017/09/logo-carvajal.png" alt="" width="70" class="d-inline-block align-text-top">
           </a>
           <div class="position-absolute top-1 end-0 d-flex">
@@ -10,7 +10,7 @@
                 <button (click)="producto()" class="btn btn-success mx-1" type="button">
                     <i class="fa-solid fa-store"></i> Productos
                 </button>
-                <button (click)="usuarios()" class="btn btn-success mx-1" type="button">
+                <button (click)="usuarios()" class="btn btn-success mx-1 d-none" type="button">
                     <i class="fa-solid fa-user-gear"></i> Usuarios
                 </button>
                 <button (click)="top()" class="btn btn-success mx-1" type="button">
@@ -19,15 +19,15 @@
             </div>
 
             <form class="d-flex mx-1" id="container_cliente">
-                <button (click)="client()" class="btn btn-warning mx-2 d-flex" type="button">
-                    <i class="fas fa-home mx-2"></i> Inicio
+                <button (click)="client()" class="btn btn-warning mx-2 d-none" type="button">
+                    <i class="fas fa-home"></i>
                 </button>
-                <button (click)="carro()" class="btn btn-warning mx-2" type="button">
-                    <i class="fa-solid fa-bag-shopping"></i>
+                <button (click)="carro()" class="btn btn-warning mx-2 d-flex" type="button">
+                    <i class="fa-solid fa-bag-shopping mx-1"></i> Bolsa
                 </button>
                 <div class="input-group">
                     <input type="search" class="form-control" placeholder="Buscar productos">
-                    <button class="btn btn_ btn-warning" type="button">
+                    <button class="btn btn_ btn-warning d-none" type="button">
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
                 </div>
@@ -36,7 +36,7 @@
             <button [routerLink]="['login']" class="btn btn-danger mx-2" type="button">
                 <i class="fas fa-power-off"></i>
             </button>
-            <a href="https://github.com/ivangomezi" target="_blank" class="btn btn-clear mx-2" type="button">
+            <a href="https://github.com/ivangomezi/ClientApp-Ecommerce" target="_blank" class="btn btn-clear mx-2" type="button">
                 <i class="fa-brands fa-github"></i>
                 GitHub
             </a>

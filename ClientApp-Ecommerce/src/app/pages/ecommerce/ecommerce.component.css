@@ -1,0 +1,45 @@
+.container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 20rem;
+    position: relative;
+}
+.card-quanty input {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+}
+.card-quanty button::before {
+    content: '.';
+    color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.card .card-branch {
+    padding: 10px 30px;
+    border-radius: 50px 0px 0px 50px;
+    background: rgba(95, 53, 138,.8);
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.card img {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+.card-body .card-title {
+    font-weight: bold;
+    color: var(--primary-c-color);
+}

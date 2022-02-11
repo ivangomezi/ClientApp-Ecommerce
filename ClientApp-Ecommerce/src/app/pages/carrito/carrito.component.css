@@ -1,0 +1,52 @@
+.header h3 {
+    font-weight: bold;
+    border-right: 1px solid #1d2024;
+}
+
+.body {
+    margin: 5rem 1rem;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background: #f1f1f1;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+}
+
+.body-data {
+    border-bottom: 1px solid #e1e1e1;
+}
+.body-data h5 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.body-data p {
+    font-size: 12px;
+}
+
+.body-cuenta {
+    margin-top: 2rem;
+    text-align: end;
+}
+.body-cuenta .col:first-child {
+    text-align: start;
+}
+.body-cuenta .col:first-child h5 {
+    text-align: center;
+}
+.body-cuenta .col:first-child p {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.body-cuenta .col:last-child {
+    text-align: center;
+}
+.body-cuenta .col:last-child button {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 30px;
+}

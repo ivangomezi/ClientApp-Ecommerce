@@ -1,1 +1,51 @@
-<p>carrito works!</p>
+<section class="container mt-5">
+    <div class="header d-flex">
+        <h3 class="mx-3 px-3">Viendo tu bolsa de compras</h3>
+        <button (click)="regresar()" class="btn btn-secondary" type="button">
+            Seguir comprando 
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+    <div class="body">
+        <div class="body-container d-block">
+            <div class="body-data row mt-2" *ngFor="let item of ListaCompras">
+                <div class="mx-3 col">
+                    <img src="{{item.img_Product}}" alt="foto" class="mx-3" width="100">
+                </div>
+                <div class="mx-3 col">
+                    <h5>Nombre</h5>
+                    <p>{{item.name_Product}}</p>
+                </div>
+                <div class="mx-3 col">
+                    <h5>Precio Unidad</h5>
+                    <p #price_unit>${{item.price_Product}}</p>
+                </div>
+                <div class="mx-3 col">
+                    <h5>Cantidad</h5>
+                    <p #product_cant>{{item.quantity}}</p>
+                </div>
+                <div class="mx-3 col">
+                    <h5>Total</h5>
+                    <p id="total_product">${{item.total_Buy}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-cuenta row">
+            <div class="col">
+                <h5 class="mx-2">
+                    <strong>NÚMERO ORDEN: </strong>
+                </h5>
+                <p>{{code}}</p>
+            </div>
+            <div class="col">
+                <h1>Total:</h1>
+                <h3>${{total}}</h3>
+            </div>
+            <div class="col">
+                <button (click)="comprar()" class="btn btn-success">
+                    Comprar
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
